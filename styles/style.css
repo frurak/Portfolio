@@ -2549,9 +2549,9 @@ footer .footer_right_container .footer_right_content .bottoms_rights .design_pro
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2585,7 +2585,7 @@ footer .footer_right_container .footer_right_content .bottoms_rights .design_pro
     font-size: 14px;
     line-height: 21px;
     font-weight: 700;
-    margin-top: 10px;
+    margin-top: 20px;
     color: #3f9390;
   }
   footer .footer_left_container .footer_left_content .bottoms_socials {
@@ -3653,9 +3653,9 @@ footer .footer_right_container .footer_right_content .bottoms_rights .design_pro
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -3689,7 +3689,7 @@ footer .footer_right_container .footer_right_content .bottoms_rights .design_pro
     font-size: 14px;
     line-height: 21px;
     font-weight: 700;
-    margin-top: 10px;
+    margin-top: 20px;
     color: #3f9390;
   }
   footer .footer_left_container .footer_left_content .bottoms_socials {
