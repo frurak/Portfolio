@@ -2291,7 +2291,7 @@ footer .footer_right_container .footer_right_content .bottoms_rights .design_pro
   .projects_section_container .projects_images_container {
     position: absolute;
     left: 0;
-    top: 25%;
+    top: 27%;
     height: 100%;
     width: 100%;
     z-index: 3;
@@ -2321,7 +2321,7 @@ footer .footer_right_container .footer_right_content .bottoms_rights .design_pro
   .projects_section_container .projects_content_container {
     position: absolute;
     left: 5%;
-    top: 8%;
+    top: 10%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

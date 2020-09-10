@@ -1469,7 +1469,7 @@ footer {
         .projects_images_container {
             position: absolute;
             left: 0;
-            top: 25%;
+            top: 27%;
             height: 100%;
             width: 100%;
             z-index: 3;
@@ -1500,7 +1500,7 @@ footer {
         .projects_content_container {
             position: absolute;
             left: 5%;
-            top: 8%;
+            top: 10%;
             @include flex(start, flex-start);
             flex-direction: column;
             z-index: 4;
@@ -2394,7 +2394,7 @@ footer {
                     line-height: 21px;
                     font-weight: 300;
                     margin-top: 10px;
-                    
+
                 }
                 .footer_email {
                     font-size: 14px;
