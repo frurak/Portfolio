@@ -67,7 +67,7 @@ body {
         }
         .motto {
             font-size: 24px;
-            font-weight: 500;
+            font-weight: 300;
         }
         .menu_btn {
             display: none;
@@ -3216,7 +3216,7 @@ footer {
             width: 88%;
             z-index: 10;
             .name {
-                font-size: 24px;
+                font-size: 26px;
                 font-weight: 800;
                 margin: 0 0 5px 0;
                 line-height: 35px;
@@ -3231,73 +3231,10 @@ footer {
             }
         }
         .secondary_text_container {
-            position: absolute;
-            bottom: -30%;
-            right: 6%;
-            width: auto;
-            z-index: 10;
-            margin: 0;
-            @include flex(center, flex-end);
-            flex-direction: column;
-            .secondary_text {
-                font-size: 26px;
-                line-height: 28px;
-                font-weight: 800;
-                text-align: right;
-                // background: rgb(146, 146, 187);
-                position: relative;
-                #secondary_mobile_small {
-                    font-size: 14px;
-                    line-height: 30px;
-                    font-weight: 300;
-                }
-                #secondary_mobile_dot {
-                    color: $green;
-                }
-                &::before {
-                    content: '';
-                    display: block;
-                    background: #f2f2f2;
-                    position: absolute;
-                    left: 0;
-                    bottom: -13%;
-                    width: 400%;
-                    height: 80%;
-                    z-index: -1;
-                    transform: translateX(-87%);
-                }
-            }
+            display: none;
         }
-        // .hey_text {
-        //     position: absolute;
-        //     top: 67%;
-        //     right: 50%;
-        //     width: auto;
-        //     z-index: 10;
-        //     color: #fff;
-        //     h4 {
-        //         font-size: 14px;
-        //         line-height: 34px;
-        //         font-weight: 600;
-        //     }
-        // }
         .socials_main_container {
-            position: absolute;
-            bottom: -40%;
-            right: 6%;
-            margin: 0;
-            width: auto;
-            z-index: 10;
-            font-size: 22px;
-            @include flex(center, space-between);
-            // display: none;
-            .social {
-                cursor: pointer;
-                &:hover{
-                    color: $green;
-                    transition: 0.2s ease-in-out;
-                }
-            }
+            display: none;
         }
         .main_image_container {
             // background: grey;
@@ -3331,10 +3268,49 @@ footer {
             }
         }
     }
+    .secondary_section {
+        width: 100%;
+        height: 100vh;
+        // background: rgb(221, 221, 221);
+        @include flex(center, center);
+        flex-direction: column;
+        // padding: 0 6%;
+        position: relative;
+        .secondary_content {
+            width: 88%;
+            height: auto;
+            position: absolute;
+            top: 10%;
+            right: 6%;
+            @include flex(flex-end, center);
+            flex-direction: column;
+            // background: rgb(236, 236, 236);
+            .secondary_text_mobile {
+                font-size: 26px;
+                line-height: 28px;
+                font-weight: 800;
+                text-align: right;
+                #secondary_mobile_dot {
+                    color: $green;
+                }
+            }
+            .secondary_text_location {
+                font-size: 14px;
+                font-weight: 300;
+                margin-bottom: -20px;
+            }
+        }
+        .secondary_mobile_image {
+            width: 94%;
+            position: absolute;
+            left: 50%;
+            bottom: 13%;
+            transform: translateX(-50%);
+        }
+    }
     .experience_container {
         height: auto;
         min-height: 60vh;
-        margin: 50vh 0 0 0;
         @include flex(center, flex-start);
         flex-direction: column;
         // background: rgb(140, 172, 177);
@@ -3344,7 +3320,7 @@ footer {
             margin: 0;
             .quick_perspective {
                 font-size: 14px;
-                font-weight: 500;
+                font-weight: 300;
                 margin: 0 0 10px 0;
             }
             .experience_boxes_container {
@@ -3362,14 +3338,14 @@ footer {
                         }
                         .experience_name_overlay {
                             position: absolute;
-                            bottom: 4%;
+                            bottom: 16%;
                             left: 8%;
                             width: 90%;
-                            height: 40%;
+                            height: auto;
                             .experience_name {
-                                font-size: 26px;
-                                font-weight: 700;
-                                line-height: 28px;
+                                font-size: 22px;
+                                font-weight: 500;
+                                line-height: 24px;
                             }
                         }
                         .experience_corner_icons {
@@ -3435,7 +3411,7 @@ footer {
                 }   
                 p {
                     font-size: 14px;
-                    margin: 20px 0 0 0;
+                    margin: 10px 0 0 0;
                     font-weight: 300;
                 }
             }
@@ -3470,8 +3446,8 @@ footer {
                         width: 100%;
                         // height: 50%;
                         @include flex(center, flex-start);
-                        font-size: 26px;
-                        font-weight: 800;
+                        font-size: 22px;
+                        font-weight: 500;
                         color: #fff;
                         padding: 0;
                     }
@@ -3523,13 +3499,13 @@ footer {
                             font-size: 14px;
                             line-height: 21px;
                             color: #fff;
-                            font-weight: 500;
+                            font-weight: 300;
                             #about_break {
                                 display: none;
                             }
                         }
                         .subheader_content_text_subheader {
-                            font-size: 14px;
+                            font-size: 10px;
                             line-height: 21px;
                             color: #fff;
                             font-weight: 300;
@@ -3709,7 +3685,7 @@ footer {
             .footer_left_content {
                 min-height: 80%;
                 width: 100%;
-                @include flex(flex-start, space-between);
+                @include flex(flex-start, flex-start);
                 flex-direction: column;
                 // background: rgb(153, 122, 122);
                 h1 {
@@ -3732,7 +3708,7 @@ footer {
                     font-size: 14px;
                     line-height: 21px;
                     font-weight: 700;
-                    margin-top: 10px;
+                    margin-top: 20px;
                     color: $green;
                 }
                 .bottoms_socials {
@@ -5849,7 +5825,7 @@ footer {
             }
             .motto {
                 font-size: 24px;
-                font-weight: 500;
+                font-weight: 300;
             }
         }
         nav {
