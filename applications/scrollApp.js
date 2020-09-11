@@ -1,14 +1,17 @@
 const experienceScrollContainer = document.getElementById('scroll_experience');
 let expContTop = experienceScrollContainer.getBoundingClientRect().top;
 
-const secondaryTextContainer = document.querySelector('.secondary_text_container');
-let secTextTop = secondaryTextContainer.offsetTop;
+const secondarySection = document.querySelector('.secondary_section');
+let secTop = secondarySection.offsetTop;
 
 const leftTextContainer = document.getElementById('scroll_about');
 let leftTextTop = leftTextContainer.getBoundingClientRect().top;
 
 const projectsContainer = document.getElementById('scroll_projects');
 let projectsTop = projectsContainer.offsetTop;
+
+const body = document.querySelector('body');
+let bodyBottom = body.getBoundingClientRect().bottom;
 
 // console.log(leftTextTop);
 
@@ -17,7 +20,7 @@ navLinks.forEach((link,index) => {
         if (index === 0) {
             if(mediaMax1199.matches) {
                 window.scrollTo({
-                    top: secTextTop,
+                    top: secTop,
                     left: 0,
                     behavior: 'smooth'
                 });
@@ -39,6 +42,13 @@ navLinks.forEach((link,index) => {
         if (index === 2) {
             window.scrollTo({
                 top: projectsTop,
+                left: 0,
+                behavior: 'smooth'
+            });
+        }
+        if (index === 3) {
+            window.scrollTo({
+                top: bodyBottom,
                 left: 0,
                 behavior: 'smooth'
             });

@@ -66,7 +66,7 @@ body {
             }
         }
         .motto {
-            font-size: 24px;
+            font-size: 20px;
             font-weight: 300;
         }
         .menu_btn {
@@ -109,7 +109,7 @@ body {
         z-index: 10;
         // background: grey;
         .name {
-            font-size: 50px;
+            font-size: 40px;
             font-weight: 800;
             margin: 0 0 10px 0;
             span {
@@ -132,9 +132,9 @@ body {
         margin: 0 5% 0 0;
         .secondary_text {
             text-align: right;
-            font-size: 50px;
+            font-size: 40px;
             font-weight: 800;
-            line-height: 54px;
+            line-height: 43.2px;
             #secondary_mobile_small {
                 font-size: 18px;
                 font-weight: 300;
@@ -144,19 +144,6 @@ body {
             }
         }
     }
-    // .hey_text {
-    //     position: absolute;
-    //     top: 30%;
-    //     right: 12%;
-    //     width: auto;
-    //     z-index: 10;
-    //     // background: grey;
-    //     h4 {
-    //         font-size: 24px;
-    //         line-height: 34px;
-    //         font-weight: 500;
-    //     }
-    // }
     .socials_main_container {
         position: absolute;
         bottom: 7%;
@@ -338,12 +325,12 @@ body {
                         position: absolute;
                         bottom: 12%;
                         left: 8%;
-                        width: 90%;
+                        width: 80%;
                         height: 30%;
                         .experience_name {
-                            font-size: 24px;
+                            font-size: 20px;
                             font-weight: 500;
-                            line-height: 30px;
+                            line-height: 26px;
                         }
                     }
                     .experience_corner_icons {
@@ -459,8 +446,8 @@ body {
             @include flex(center, center);
             flex-direction: column;
             h1 {
-                font-size: 50px;
-                line-height: 54px;
+                font-size: 40px;
+                line-height: 43.2px;
                 font-weight: 800;
                 // margin: 30% 0 0 0;
                 .left_text_dot {
@@ -469,7 +456,7 @@ body {
             }   
             p {
                 font-size: 18px;
-                margin: 40px 0 0 0;
+                margin: 30px 0 0 0;
                 font-weight: 300;
             }
         }
@@ -506,7 +493,7 @@ body {
                     // height: 50%;
                     @include flex(center, flex-start);
                     font-size: 24px;
-                    font-weight: 800;
+                    font-weight: 500;
                     color: #fff;
                     padding: 0 0 0 10%;
                 }
@@ -530,7 +517,7 @@ body {
                 // background: #000;
                 .about_liststyle_line {
                     width: 5px;
-                    height: 100%;
+                    height: 90%;
                     background: #2c5655;
                     border-radius: 2px;
                     @include flex(center, space-between);
@@ -547,7 +534,7 @@ body {
                 }
                 .about_subheader_content {
                     // width: 80%;
-                    height: 100%;
+                    height: 90%;
                     margin: 0 0 0 20px;
                     @include flex(start, space-between);
                     flex-direction: column;
@@ -614,7 +601,6 @@ body {
                 position: absolute;
                 left: 10%;
                 top: 5%;
-                cursor: zoom-in;
             }
             .image_shadow {
                 width: 120%;
@@ -641,8 +627,8 @@ body {
             width: 100%;
             height: auto;
             h1 {
-                font-size: 50px;
-                line-height: 54px;
+                font-size: 40px;
+                line-height: 43.2px;
                 font-weight: 800;
                 #content_dot {
                     color: $green;
@@ -683,8 +669,8 @@ body {
                         top: 50%;
                         left: 50%;
                         transform: translate(-50%,-50%);
-                        width: 13px;
-                        height: 13px;
+                        width: 11px;
+                        height: 11px;
                         border-radius: 50%;
                         transition: 0.2s ease-in-out;
                     }
@@ -734,12 +720,12 @@ body {
                 @include flex(center, center);
                 position: relative;
                 content: '';
-                width: 60px;
-                height: 60px;
+                width: 50px;
+                height: 50px;
                 border-radius: 50%;
                 border: 2px solid #000;
                 .icon-right-open-big {
-                    font-size: 24px;
+                    font-size: 20px;
                 }
             }
         }
@@ -865,11 +851,11 @@ footer {
         .footer_left_content {
             min-height: 80%;
             width: 100%;
-            @include flex(flex-start, space-between);
+            @include flex(flex-start, flex-start);
             flex-direction: column;
             h1 {
-                font-size: 50px;
-                line-height: 54px;
+                font-size: 40px;
+                line-height: 43.2px;
                 font-weight: 800;
                 @include flex(center, flex-start);
                 .footer_left_dot {
@@ -887,7 +873,7 @@ footer {
                 font-size: 18px;
                 line-height: 27px;
                 font-weight: 700;
-                margin-top: 20px;
+                margin-top: 30px;
                 color: $green;
             }
             .bottoms_socials {
@@ -939,7 +925,7 @@ footer {
                         content: '';
                         display: flex;
                         width: 100%;
-                        height: 1px;
+                        height: 1.5px;
                         background: $green;
                         transform: scaleX(0);
                         transition: 0.35s ease-in-out;
@@ -947,7 +933,7 @@ footer {
                     &:hover {
                         transform: translateY(-5px);
                         &::after {
-                            height: 1px;
+                            height: 1.5px;
                             transform: scaleX(1) translateY(5px);
                         }
                     }
@@ -1795,7 +1781,7 @@ footer {
     .main_container {
         .topbar {
             height: 10vh;
-            padding: 0 8%;
+            padding: 0 5%;
             z-index: 55;
             position: fixed;
             top: 0;
@@ -2552,7 +2538,7 @@ footer {
             width: 88%;
             z-index: 10;
             .name {
-                font-size: 40px;
+                font-size: 30px;
                 font-weight: 800;
                 margin: 0 0 5px 0;
                 span {
@@ -2635,8 +2621,8 @@ footer {
             z-index: 2;
             // background: rgb(236, 236, 236);
             .secondary_text_mobile {
-                font-size: 26px;
-                line-height: 28px;
+                font-size: 30px;
+                line-height: 34px;
                 font-weight: 800;
                 text-align: right;
                 #secondary_mobile_dot {
@@ -2644,13 +2630,13 @@ footer {
                 }
             }
             .secondary_text_location {
-                font-size: 14px;
+                font-size: 18px;
                 font-weight: 300;
                 margin-bottom: -20px;
             }
         }
         .secondary_mobile_image {
-            width: 84%;
+            width: 75%;
             position: absolute;
             z-index: 1;
             left: 50%;
@@ -2661,7 +2647,6 @@ footer {
     .experience_container {
         height: auto;
         min-height: 80vh;
-        margin: 55vh 0 0 0;
         @include flex(center, flex-start);
         flex-direction: column;
         // background: rgb(140, 172, 177);
@@ -2670,7 +2655,7 @@ footer {
             width: 90%;
             .quick_perspective {
                 font-size: 18px;
-                font-weight: 700;
+                font-weight: 300;
                 margin: 0 0 15px 0;
             }
             .experience_boxes_container {
@@ -2689,14 +2674,14 @@ footer {
                         }
                         .experience_name_overlay {
                             position: absolute;
-                            bottom: 4%;
+                            bottom: 16%;
                             left: 8%;
                             width: 90%;
-                            height: 32%;
+                            height: auto;
                             .experience_name {
-                                font-size: 40px;
-                                font-weight: 700;
-                                line-height: 43.2px;
+                                font-size: 30px;
+                                font-weight: 500;
+                                line-height: 34px;
                             }
                         }
                         .experience_corner_icons {
@@ -2756,8 +2741,8 @@ footer {
                 flex-direction: column;
                 transform: translateY(0%);
                 h1 {
-                    font-size: 40px;
-                    line-height: 43.2px;
+                    font-size: 30px;
+                    line-height: 34px;
                     font-weight: 800;
                     .left_text_dot {
                         color: $green;
@@ -2765,7 +2750,7 @@ footer {
                 }   
                 p {
                     font-size: 18px;
-                    margin: 20px 0 0 0;
+                    margin: 10px 0 0 0;
                     font-weight: 300;
                 }
             }
@@ -2800,8 +2785,8 @@ footer {
                         width: 100%;
                         // height: 50%;
                         @include flex(center, flex-start);
-                        font-size: 40px;
-                        font-weight: 800;
+                        font-size: 30px;
+                        font-weight: 500;
                         color: #fff;
                         padding: 0;
                     }
@@ -2853,13 +2838,13 @@ footer {
                             font-size: 18px;
                             line-height: 24px;
                             color: #fff;
-                            font-weight: 500;
+                            font-weight: 300;
                             #about_break {
                                 display: none;
                             }
                         }
                         .subheader_content_text_subheader {
-                            font-size: 18px;
+                            font-size: 14px;
                             line-height: 24px;
                             color: #fff;
                             font-weight: 300;
@@ -2921,8 +2906,8 @@ footer {
                 // width: 100%;
                 // height: auto;
                 h1 {
-                    font-size: 40px;
-                    line-height: 43.2px;
+                    font-size: 30px;
+                    line-height: 34px;
                     font-weight: 800;
                     #content_dot {
                         color: $green;
@@ -3040,12 +3025,12 @@ footer {
             .footer_left_content {
                 min-height: 80%;
                 width: 100%;
-                @include flex(flex-start, space-between);
+                @include flex(flex-start, flex-start);
                 flex-direction: column;
                 // background: rgb(153, 122, 122);
                 h1 {
-                    font-size: 40px;
-                    line-height: 43.2px;
+                    font-size: 30px;
+                    line-height: 34px;
                     font-weight: 800;
                     @include flex(center, flex-start);
                     .footer_left_dot {
@@ -3063,7 +3048,7 @@ footer {
                     font-size: 18px;
                     line-height: 24px;
                     font-weight: 700;
-                    margin-top: 10px;
+                    margin-top: 20px;
                     color: $green;
                 }
                 .bottoms_socials {
@@ -3124,7 +3109,7 @@ footer {
     .main_container {
         .topbar {
             height: 10vh;
-            padding: 0 8%;
+            padding: 0 6%;
             z-index: 55;
             position: fixed;
             top: 0;
@@ -3769,7 +3754,7 @@ footer {
     .main_container {
         .topbar {
             height: 8vh;
-            padding: 0 8%;
+            padding: 0 6%;
             z-index: 55;
             position: fixed;
             top: 0;
@@ -3847,8 +3832,8 @@ footer {
                 transform: translateY(5%);
                 .nav_link {
                     // padding: 8px 0;
-                    font-size: 16px;
-                    font-weight: 600;
+                    font-size: 14px;
+                    font-weight: 500;
                     cursor: pointer;
                 }
             }
@@ -3876,60 +3861,10 @@ footer {
             }
         }
         .secondary_text_container {
-            position: absolute;
-            bottom: -30%;
-            right: 6%;
-            width: auto;
-            z-index: 10;
-            margin: 0;
-            @include flex(center, flex-end);
-            flex-direction: column;
-            .secondary_text {
-                font-size: 22px;
-                line-height: 24px;
-                font-weight: 800;
-                text-align: right;
-                // background: rgb(146, 146, 187);
-                position: relative;
-                #secondary_mobile_small {
-                    font-size: 12px;
-                    line-height: 40px;
-                    font-weight: 300;
-                }
-                #secondary_mobile_dot {
-                    color: $green;
-                }
-                &::before {
-                    content: '';
-                    display: block;
-                    background: #f2f2f2;
-                    position: absolute;
-                    left: 0;
-                    bottom: -13%;
-                    width: 200%;
-                    height: 80%;
-                    z-index: -1;
-                    transform: translateX(-74%);
-                }
-            }
+            display: none;
         }
         .socials_main_container {
-            position: absolute;
-            bottom: -40%;
-            right: 6%;
-            margin: 0;
-            width: auto;
-            z-index: 10;
-            font-size: 20px;
-            @include flex(center, space-between);
-            // display: none;
-            .social {
-                cursor: pointer;
-                &:hover{
-                    color: $green;
-                    transition: 0.2s ease-in-out;
-                }
-            }
+           display: none;
         }
         .main_image_container {
             // background: grey;
@@ -3963,10 +3898,51 @@ footer {
             }
         }
     }
+    .secondary_section {
+        width: 100%;
+        height: 80vh;
+        // background: rgb(221, 221, 221);
+        @include flex(center, center);
+        flex-direction: column;
+        // padding: 0 6%;
+        position: relative;
+        .secondary_content {
+            width: 88%;
+            height: auto;
+            position: absolute;
+            top: 10%;
+            right: 6%;
+            @include flex(flex-end, center);
+            flex-direction: column;
+            z-index: 2;
+            // background: rgb(236, 236, 236);
+            .secondary_text_mobile {
+                font-size: 22px;
+                line-height: 24px;
+                font-weight: 800;
+                text-align: right;
+                #secondary_mobile_dot {
+                    color: $green;
+                }
+            }
+            .secondary_text_location {
+                font-size: 12px;
+                font-weight: 300;
+                margin-bottom: -20px;
+            }
+        }
+        .secondary_mobile_image {
+            width: 90%;
+            position: absolute;
+            z-index: 1;
+            left: 50%;
+            bottom: 12%;
+            transform: translateX(-50%);
+        }
+    }
     .experience_container {
         height: auto;
         min-height: 80vh;
-        margin: 50vh 0 0 0;
         @include flex(center, flex-start);
         flex-direction: column;
         // background: rgb(140, 172, 177);
@@ -3993,13 +3969,13 @@ footer {
                         }
                         .experience_name_overlay {
                             position: absolute;
-                            bottom: 8%;
+                            bottom: 16%;
                             left: 8%;
                             width: 90%;
-                            height: 40%;
+                            height: auto;
                             .experience_name {
-                                font-size: 22px;
-                                font-weight: 700;
+                                font-size: 18px;
+                                font-weight: 500;
                                 line-height: 24px;
                             }
                         }
@@ -4046,7 +4022,7 @@ footer {
         @include flex(center, center);
         flex-direction: column;
         width: 100%;
-        height: 160vh;
+        height: 150vh;
         .about_left_section {
             width: 100%;
             height: 15%;
@@ -4069,14 +4045,14 @@ footer {
                 }   
                 p {
                     font-size: 12px;
-                    margin: 20px 0 0 0;
+                    margin: 10px 0 0 0;
                     font-weight: 300;
                 }
             }
         }
         .about_middle_section {
             width: 100%;
-            height: 45%;
+            height: 40%;
             background: #1a1a18;
             overflow: hidden;
             @include flex(center, center);
@@ -4104,8 +4080,8 @@ footer {
                         width: 100%;
                         // height: 50%;
                         @include flex(center, flex-start);
-                        font-size: 22px;
-                        font-weight: 800;
+                        font-size: 18px;
+                        font-weight: 500;
                         color: #fff;
                         padding: 0;
                     }
@@ -4157,13 +4133,13 @@ footer {
                             font-size: 12px;
                             line-height: 18px;
                             color: #fff;
-                            font-weight: 500;
+                            font-weight: 300;
                             #about_break {
                                 display: none;
                             }
                         }
                         .subheader_content_text_subheader {
-                            font-size: 12px;
+                            font-size: 10px;
                             line-height: 18px;
                             color: #fff;
                             font-weight: 300;
@@ -4175,7 +4151,7 @@ footer {
     }
     .projects_section_container {
         width: 100%;
-        height: 100vh;
+        height: 80vh;
         position: relative;
         overflow: hidden;
         // background: rgb(243, 243, 243);
@@ -4256,7 +4232,7 @@ footer {
                         border-radius: 50%;
                         width: 30px;
                         height: 30px;
-                        margin: 0 8px;
+                        margin: 0 4px;
                         position: relative;
                         transition: 0.2s ease-in-out;
                         &::after {
@@ -4343,7 +4319,7 @@ footer {
             .footer_left_content {
                 min-height: 80%;
                 width: 100%;
-                @include flex(flex-start, space-between);
+                @include flex(flex-start, flex-start);
                 flex-direction: column;
                 // background: rgb(153, 122, 122);
                 h1 {
@@ -4366,7 +4342,7 @@ footer {
                     font-size: 12px;
                     line-height: 18px;
                     font-weight: 700;
-                    margin-top: 10px;
+                    margin-top: 20px;
                     color: $green;
                 }
                 .bottoms_socials {
@@ -4426,7 +4402,7 @@ footer {
     .main_container {
         .topbar {
             height: 8vh;
-            padding: 0 8%;
+            padding: 0 6%;
             z-index: 55;
             position: fixed;
             top: 0;
@@ -4504,8 +4480,8 @@ footer {
                 transform: translateY(5%);
                 .nav_link {
                     // padding: 8px 0;
-                    font-size: 26px;
-                    font-weight: 600;
+                    font-size: 20px;
+                    font-weight: 500;
                     cursor: pointer;
                 }
             }
@@ -4532,73 +4508,10 @@ footer {
             }
         }
         .secondary_text_container {
-            position: absolute;
-            bottom: -35%;
-            right: 6%;
-            width: auto;
-            z-index: 10;
-            margin: 0;
-            @include flex(center, flex-end);
-            flex-direction: column;
-            .secondary_text {
-                font-size: 40px;
-                line-height: 43.2px;
-                font-weight: 800;
-                text-align: right;
-                // background: rgb(146, 146, 187);
-                position: relative;
-                #secondary_mobile_small {
-                    font-size: 24px;
-                    line-height: 50px;
-                    font-weight: 300;
-                }
-                #secondary_mobile_dot {
-                    color: $green;
-                }
-                &::before {
-                    content: '';
-                    display: block;
-                    background: #f2f2f2;
-                    position: absolute;
-                    left: 0;
-                    bottom: -13%;
-                    width: 500%;
-                    height: 80%;
-                    z-index: -1;
-                    transform: translateX(-90%);
-                }
-            }
+            display: none;
         }
-        // .hey_text {
-        //     position: absolute;
-        //     bottom: 30%;
-        //     right: 53%;
-        //     width: auto;
-        //     z-index: 10;
-        //     color: #fff;
-        //     h4 {
-        //         font-size: 26px;
-        //         line-height: 34px;
-        //         font-weight: 600;
-        //     }
-        // }
         .socials_main_container {
-            position: absolute;
-            bottom: -42%;
-            right: 6%;
-            margin: 0;
-            width: auto;
-            z-index: 10;
-            font-size: 30px;
-            @include flex(center, space-between);
-            // display: none;
-            .social {
-                cursor: pointer;
-                &:hover{
-                    color: $green;
-                    transition: 0.2s ease-in-out;
-                }
-            }
+            display: none;
         }
         .main_image_container {
             // background: grey;
@@ -4632,10 +4545,51 @@ footer {
             }
         }
     }
+    .secondary_section {
+        width: 100%;
+        height: 100vh;
+        // background: rgb(221, 221, 221);
+        @include flex(center, center);
+        flex-direction: column;
+        // padding: 0 6%;
+        position: relative;
+        .secondary_content {
+            width: 88%;
+            height: auto;
+            position: absolute;
+            top: 6%;
+            right: 6%;
+            @include flex(flex-end, center);
+            flex-direction: column;
+            z-index: 2;
+            // background: rgb(236, 236, 236);
+            .secondary_text_mobile {
+                font-size: 40px;
+                line-height: 43.2px;
+                font-weight: 800;
+                text-align: right;
+                #secondary_mobile_dot {
+                    color: $green;
+                }
+            }
+            .secondary_text_location {
+                font-size: 20px;
+                font-weight: 300;
+                margin-bottom: -20px;
+            }
+        }
+        .secondary_mobile_image {
+            width: 75%;
+            position: absolute;
+            z-index: 1;
+            left: 50%;
+            bottom: 12%;
+            transform: translateX(-50%);
+        }
+    }
     .experience_container {
         height: auto;
         min-height: 80vh;
-        margin: 40vh 0 0 0;
         @include flex(center, flex-start);
         flex-direction: column;
         // background: rgb(140, 172, 177);
@@ -4644,7 +4598,7 @@ footer {
             width: 90%;
             .quick_perspective {
                 font-size: 24px;
-                font-weight: 700;
+                font-weight: 300;
                 margin: 0 0 30px 0;
             }
             .experience_boxes_container {
@@ -4652,7 +4606,7 @@ footer {
                 height: 400px;
                 overflow-y: hidden;
                 .experience_boxes_overlay {
-                    width: 350%;
+                    width: 260%;
                     height: 100%;
                     .experience_box {
                         height: 94%;
@@ -4663,14 +4617,14 @@ footer {
                         }
                         .experience_name_overlay {
                             position: absolute;
-                            bottom: 8%;
+                            bottom: 16%;
                             left: 8%;
                             width: 90%;
-                            height: 32%;
+                            height: auto;
                             .experience_name {
-                                font-size: 40px;
-                                font-weight: 700;
-                                line-height: 43.2px;
+                                font-size: 30px;
+                                font-weight: 500;
+                                line-height: 34px;
                             }
                         }
                         .experience_corner_icons {
@@ -4716,7 +4670,7 @@ footer {
         @include flex(center, center);
         flex-direction: column;
         width: 100%;
-        height: 160vh;
+        height: 150vh;
         .about_left_section {
             width: 100%;
             height: 15%;
@@ -4739,14 +4693,14 @@ footer {
                 }   
                 p {
                     font-size: 20px;
-                    margin: 20px 0 0 0;
+                    margin: 10px 0 0 0;
                     font-weight: 300;
                 }
             }
         }
         .about_middle_section {
             width: 100%;
-            height: 45%;
+            height: 50%;
             background: #1a1a18;
             overflow: hidden;
             @include flex(center, center);
@@ -4760,7 +4714,7 @@ footer {
             background: #1a1a18;
             @include flex(center, center);
             flex-direction: column;
-            padding: 8% 0;
+            padding: 4% 0;
             .about_right_content {
                 width: 100%;
                 height: 90%;
@@ -4774,8 +4728,8 @@ footer {
                         width: 100%;
                         // height: 50%;
                         @include flex(center, flex-start);
-                        font-size: 40px;
-                        font-weight: 800;
+                        font-size: 30px;
+                        font-weight: 500;
                         color: #fff;
                         padding: 0;
                     }
@@ -4833,7 +4787,7 @@ footer {
                             }
                         }
                         .subheader_content_text_subheader {
-                            font-size: 20px;
+                            font-size: 16px;
                             line-height: 30px;
                             color: #fff;
                             font-weight: 300;
@@ -5013,7 +4967,7 @@ footer {
             .footer_left_content {
                 min-height: 80%;
                 width: 100%;
-                @include flex(flex-start, space-between);
+                @include flex(flex-start, flex-start);
                 flex-direction: column;
                 // background: rgb(153, 122, 122);
                 h1 {
@@ -5036,7 +4990,7 @@ footer {
                     font-size: 20px;
                     line-height: 30px;
                     font-weight: 700;
-                    margin-top: 10px;
+                    margin-top: 20px;
                     color: $green;
                 }
                 .bottoms_socials {
@@ -5171,11 +5125,11 @@ footer {
                 height: 70%;
                 @include flex(center, space-between);
                 flex-direction: column;
-                transform: translateY(5%);
+                transform: translateY(2%);
                 .nav_link {
                     // padding: 8px 0;
-                    font-size: 28px;
-                    font-weight: 600;
+                    font-size: 24px;
+                    font-weight: 500;
                     cursor: pointer;
                 }
             }
@@ -5203,72 +5157,10 @@ footer {
             }
         }
         .secondary_text_container {
-            position: absolute;
-            bottom: -35%;
-            right: 6%;
-            width: auto;
-            z-index: 10;
-            margin: 0;
-            @include flex(center, flex-end);
-            flex-direction: column;
-            .secondary_text {
-                font-size: 36px;
-                line-height: 38.9px;
-                font-weight: 800;
-                text-align: right;
-                // background: rgb(146, 146, 187);
-                position: relative;
-                #secondary_mobile_small {
-                    font-size: 20px;
-                    font-weight: 300;
-                }
-                #secondary_mobile_dot {
-                    color: $green;
-                }
-                &::before {
-                    content: '';
-                    display: block;
-                    background: #f2f2f2;
-                    position: absolute;
-                    left: 0;
-                    bottom: -13%;
-                    width: 500%;
-                    height: 80%;
-                    z-index: -1;
-                    transform: translateX(-90%);
-                }
-            }
+            display: none;
         }
-        // .hey_text {
-        //     position: absolute;
-        //     bottom: 30%;
-        //     right: 50%;
-        //     width: auto;
-        //     z-index: 10;
-        //     color: #fff;
-        //     h4 {
-        //         font-size: 32px;
-        //         line-height: 34px;
-        //         font-weight: 600;
-        //     }
-        // }
         .socials_main_container {
-            position: absolute;
-            bottom: -45%;
-            right: 6%;
-            margin: 0;
-            width: auto;
-            z-index: 10;
-            font-size: 30px;
-            @include flex(center, space-between);
-            // display: none;
-            .social {
-                cursor: pointer;
-                &:hover{
-                    color: $green;
-                    transition: 0.2s ease-in-out;
-                }
-            }
+            display: none;
         }
         .main_image_container {
             // background: grey;
@@ -5302,11 +5194,52 @@ footer {
             }
         }
     }
+    .secondary_section {
+        width: 100%;
+        height: 100vh;
+        // background: rgb(221, 221, 221);
+        @include flex(center, center);
+        flex-direction: column;
+        // padding: 0 6%;
+        position: relative;
+        .secondary_content {
+            width: 88%;
+            height: auto;
+            position: absolute;
+            top: 6%;
+            right: 6%;
+            @include flex(flex-end, center);
+            flex-direction: column;
+            z-index: 2;
+            // background: rgb(236, 236, 236);
+            .secondary_text_mobile {
+                font-size: 40px;
+                line-height: 43.2px;
+                font-weight: 800;
+                text-align: right;
+                #secondary_mobile_dot {
+                    color: $green;
+                }
+            }
+            .secondary_text_location {
+                font-size: 20px;
+                font-weight: 300;
+                margin-bottom: -20px;
+            }
+        }
+        .secondary_mobile_image {
+            width: 84%;
+            position: absolute;
+            z-index: 1;
+            left: 50%;
+            bottom: 12%;
+            transform: translateX(-50%);
+        }
+    }
     .experience_container {
         width: 100%;
         height: auto;
         min-height: 50vh;
-        margin: 40vh 0 0 0;
         @include flex(center, center);
         // background: rgb(247, 247, 247);
         .experience_overlay {
@@ -5320,32 +5253,33 @@ footer {
                 font-size: 20px;
                 font-weight: 300;
                 // background: #fff;
-                margin: 0 0 50px 0;
+                margin: 0 0 30px 0;
             }
             .experience_boxes_container {
                 width: 100%;
-                height: 250px;
+                height: 350px;
                 // background: rgb(145, 134, 134);
+                overflow-y: hidden;
                 .experience_boxes_overlay {
-                    width: 100%;
+                    width: 180%;
                     height: 100%;
                     @include flex(center, space-between);
                     .experience_box {
                         border: 1px solid #dfdfdf;
                         width: 24%;
-                        height: 100%;
+                        height: 94%;
                         position: relative;
                         cursor: pointer;
                         .experience_name_overlay {
                             position: absolute;
-                            bottom: 12%;
+                            bottom: 16%;
                             left: 6%;
                             width: 90%;
-                            height: 30%;
+                            height: auto;
                             .experience_name {
-                                font-size: 20px;
-                                font-weight: 700;
-                                line-height: 26px;
+                                font-size: 26px;
+                                font-weight: 500;
+                                line-height: 32px;
                             }
                         }
                         .experience_corner_icons {
@@ -5403,7 +5337,7 @@ footer {
                         font-size: 20px;
                         line-height: 30px;
                         font-weight: 300;
-                        margin: 0 0 25px 0;
+                        margin: 0 0 20px 0;
                         .details_emphasis {
                             font-weight: 500;
                         }
@@ -5413,13 +5347,13 @@ footer {
         }
     }
     .about_container {
-        @include flex(center, center);
+        @include flex(center, flex-start);
         flex-direction: column;
         width: 100%;
-        height: 140vh;
+        height: 120vh;
         .about_left_section {
             width: 100%;
-            height: 15%;
+            height: 25%;
             position: static;
             @include flex(center, center);
             .left_text_container {
@@ -5430,8 +5364,8 @@ footer {
                 flex-direction: column;
                 transform: translateY(0%);
                 h1 {
-                    font-size: 36px;
-                    line-height: 38.9px;
+                    font-size: 40px;
+                    line-height: 43.2px;
                     font-weight: 800;
                     .left_text_dot {
                         color: $green;
@@ -5439,14 +5373,14 @@ footer {
                 }   
                 p {
                     font-size: 20px;
-                    margin: 20px 0 0 0;
+                    margin: 10px 0 0 0;
                     font-weight: 300;
                 }
             }
         }
         .about_middle_section {
             width: 100%;
-            height: 45%;
+            height: 50%;
             background: #1a1a18;
             overflow: hidden;
             @include flex(center, center);
@@ -5456,7 +5390,7 @@ footer {
         }
         .about_right_section {
             width: 100%;
-            height: auto;
+            height: 25%;
             background: #1a1a18;
             @include flex(center, center);
             flex-direction: column;
@@ -5464,18 +5398,20 @@ footer {
             .about_right_content {
                 width: 100%;
                 height: 90%;
-                @include flex(center, center);
-                flex-direction: column;
+                @include flex(start, space-between);
+                flex-direction: row;
                 padding: 0 5%;
                 .about_right_header {
-                    width: 100%;
+                    width: 40%;
                     margin: 0;
+                    height: 100%;
+                    margin-right: 40px;
                     .about_header_header {
                         width: 100%;
                         // height: 50%;
                         @include flex(center, flex-start);
-                        font-size: 36px;
-                        font-weight: 800;
+                        font-size: 26px;
+                        font-weight: 500;
                         color: #fff;
                         padding: 0;
                     }
@@ -5496,12 +5432,12 @@ footer {
                 }
                 .about_right_subheader {
                     @include flex(center, flex-start);
-                    width: 100%;
-                    height: auto;
-                    padding: 5% 0 5% 0%;
+                    width: 60%;
+                    height: 80%;
+                    padding: 0;
                     // background: #000;
                     .about_liststyle_line {
-                        width: 10px;
+                        width: 5px;
                         height: 100%;
                         background: #2c5655;
                         border-radius: 2px;
@@ -5511,8 +5447,8 @@ footer {
                         .liststyle_dot {
                             content: '';
                             display: block;
-                            width: 25px;
-                            height: 25px;
+                            width: 15px;
+                            height: 15px;
                             background: $green;
                             border-radius: 50%;
                         }
@@ -5527,13 +5463,13 @@ footer {
                             font-size: 20px;
                             line-height: 30px;
                             color: #fff;
-                            font-weight: 500;
+                            font-weight: 300;
                             #about_break {
                                 display: none;
                             }
                         }
                         .subheader_content_text_subheader {
-                            font-size: 20px;
+                            font-size: 16px;
                             line-height: 30px;
                             color: #fff;
                             font-weight: 300;
@@ -5552,7 +5488,7 @@ footer {
         .projects_images_container {
             position: absolute;
             left: 0;
-            top: 20%;
+            top: 17%;
             height: 100%;
             width: 100%;
             z-index: 3;
@@ -5593,16 +5529,16 @@ footer {
                 // width: 100%;
                 // height: auto;
                 h1 {
-                    font-size: 50px;
-                    line-height: 54px;
+                    font-size: 40px;
+                    line-height: 43.2px;
                     font-weight: 800;
                     #content_dot {
                         color: $green;
                     }
                 }
                 h4 {
-                    font-size: 24px;
-                    line-height: 36px;
+                    font-size: 20px;
+                    line-height: 30px;
                     font-weight: 300;
                     margin-top: 10px;
                 }
@@ -5669,7 +5605,7 @@ footer {
                 a {
                     text-decoration: none;
                     color: #000;
-                    font-size: 24px;
+                    font-size: 20px;
                     &:hover {
                         color: $green;
                         text-decoration: underline;
@@ -5712,7 +5648,7 @@ footer {
             .footer_left_content {
                 min-height: 80%;
                 width: 100%;
-                @include flex(flex-start, space-between);
+                @include flex(flex-start, flex-start);
                 flex-direction: column;
                 // background: rgb(153, 122, 122);
                 h1 {
@@ -5735,7 +5671,7 @@ footer {
                     font-size: 24px;
                     line-height: 36px;
                     font-weight: 700;
-                    margin-top: 10px;
+                    margin-top: 20px;
                     color: $green;
                 }
                 .bottoms_socials {
@@ -5843,7 +5779,7 @@ footer {
                 .nav_link {
                     padding: 4px 0;
                     margin: 10px 0;
-                    font-size: 18px;
+                    font-size: 20px;
                     font-weight: 300;
                     cursor: pointer;
                     transition: 0.35s ease-in-out;
@@ -5862,7 +5798,7 @@ footer {
             z-index: 10;
             // background: grey;
             .name {
-                font-size: 45px;
+                font-size: 40px;
                 font-weight: 800;
                 margin: 0 0 10px 0;
                 span {
@@ -5870,14 +5806,14 @@ footer {
                 }
             }
             .name_descr {
-                font-size: 24px;
-                line-height: 36px;
+                font-size: 18px;
+                line-height: 27px;
                 font-weight: 300;
             }
         }
         .secondary_text_container {
             position: absolute;
-            top: 35%;
+            top: 30%;
             right: 5%;
             width: auto;
             z-index: 10;
@@ -5885,11 +5821,11 @@ footer {
             margin: 0;
             .secondary_text {
                 text-align: right;
-                font-size: 45px;
+                font-size: 40px;
                 font-weight: 800;
-                line-height: 48.6px;
+                line-height: 43.2px;
                 #secondary_mobile_small {
-                    font-size: 24px;
+                    font-size: 18px;
                     font-weight: 300;
                 }
                 #secondary_mobile_dot {
@@ -5897,19 +5833,6 @@ footer {
                 }
             }
         }
-        // .hey_text {
-        //     position: absolute;
-        //     top: 80%;
-        //     right: 5%;
-        //     // width: 22%;
-        //     z-index: 10;
-        //     // background: grey;
-        //     h4 {
-        //         font-size: 24px;
-        //         line-height: 34px;
-        //         font-weight: 500;
-        //     }
-        // }
         .socials_main_container {
             position: absolute;
             bottom: 5%;
@@ -5918,7 +5841,7 @@ footer {
             width: auto;
             z-index: 10;
             // background: grey;
-            font-size: 26px;
+            font-size: 30px;
             @include flex(center, space-between);
             .social {
                 cursor: pointer;
@@ -5975,7 +5898,7 @@ footer {
             flex-direction: column;
             margin: 0;
             .quick_perspective {
-                font-size: 24px;
+                font-size: 18px;
                 font-weight: 300;
                 // background: #fff;
                 margin: 0 0 50px 0;
@@ -5996,13 +5919,13 @@ footer {
                         cursor: pointer;
                         .experience_name_overlay {
                             position: absolute;
-                            bottom: 12%;
+                            bottom: 16%;
                             left: 8%;
                             width: 90%;
-                            height: 30%;
+                            height: auto;
                             .experience_name {
-                                font-size: 26px;
-                                font-weight: 700;
+                                font-size: 24px;
+                                font-weight: 500;
                                 line-height: 30px;
                             }
                         }
@@ -6089,8 +6012,8 @@ footer {
                 @include flex(center, center);
                 flex-direction: column;
                 h1 {
-                    font-size: 50px;
-                    line-height: 54px;
+                    font-size: 40px;
+                    line-height: 43.2px;
                     font-weight: 800;
                     // margin: 30% 0 0 0;
                     .left_text_dot {
@@ -6099,7 +6022,7 @@ footer {
                 }   
                 p {
                     font-size: 18px;
-                    margin: 40px 0 0 0;
+                    margin: 20px 0 0 0;
                     font-weight: 300;
                 }
             }
@@ -6136,7 +6059,7 @@ footer {
                         // height: 50%;
                         @include flex(center, flex-start);
                         font-size: 24px;
-                        font-weight: 800;
+                        font-weight: 500;
                         color: #fff;
                         padding: 0 0 0 10%;
                     }
@@ -6159,8 +6082,8 @@ footer {
                     padding: 10% 0 5% 5%;
                     // background: #000;
                     .about_liststyle_line {
-                        width: 5px;
-                        height: 100%;
+                        width: 4px;
+                        height: 80%;
                         background: #2c5655;
                         border-radius: 2px;
                         @include flex(center, space-between);
@@ -6169,26 +6092,26 @@ footer {
                         .liststyle_dot {
                             content: '';
                             display: block;
-                            width: 15px;
-                            height: 15px;
+                            width: 13px;
+                            height: 13px;
                             background: $green;
                             border-radius: 50%;
                         }
                     }
                     .about_subheader_content {
                         // width: 80%;
-                        height: 100%;
+                        height: 80%;
                         margin: 0 0 0 20px;
                         @include flex(start, space-between);
                         flex-direction: column;
                         .subheader_content_text_header {
-                            font-size: 14px;
+                            font-size: 16px;
                             line-height: 21px;
                             color: #fff;
-                            font-weight: 500;
+                            font-weight: 300;
                         }
                         .subheader_content_text_subheader {
-                            font-size: 14px;
+                            font-size: 12px;
                             line-height: 21px;
                             color: #fff;
                             font-weight: 300;
@@ -6246,8 +6169,8 @@ footer {
                 width: 100%;
                 height: auto;
                 h1 {
-                    font-size: 45px;
-                    line-height: 48.6px;
+                    font-size: 40px;
+                    line-height: 43.2px;
                     font-weight: 800;
                     #content_dot {
                         color: $green;
@@ -6287,8 +6210,8 @@ footer {
                             top: 50%;
                             left: 50%;
                             transform: translate(-50%,-50%);
-                            width: 13px;
-                            height: 13px;
+                            width: 11px;
+                            height: 11px;
                             border-radius: 50%;
                             transition: 0.2s ease-in-out;
                         }
@@ -6362,11 +6285,11 @@ footer {
             .footer_left_content {
                 min-height: 80%;
                 width: 100%;
-                @include flex(flex-start, space-between);
+                @include flex(flex-start, flex-start);
                 flex-direction: column;
                 h1 {
-                    font-size: 45px;
-                    line-height: 48.6px;
+                    font-size: 40px;
+                    line-height: 43.2px;
                     font-weight: 800;
                     @include flex(center, flex-start);
                     .footer_left_dot {
