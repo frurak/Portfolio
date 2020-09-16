@@ -12,6 +12,7 @@ let projectsTop = projectsContainer.offsetTop;
 
 const body = document.querySelector('body');
 let bodyBottom = body.getBoundingClientRect().bottom;
+let bodyTop = body.getBoundingClientRect().top;
 
 // console.log(leftTextTop);
 
@@ -49,6 +50,49 @@ navLinks.forEach((link,index) => {
         if (index === 3) {
             window.scrollTo({
                 top: bodyBottom,
+                left: 0,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+const footerLinks = document.querySelectorAll('.footer_links li');
+
+footerLinks.forEach((link,index) => {
+    link.addEventListener('click', () => {
+        if (index === 0) {
+            if(mediaMax1199.matches) {
+                window.scrollTo({
+                    top: bodyTop,
+                    left: 0,
+                    behavior: 'smooth'
+                });
+            } else {
+                window.scrollTo({
+                    top: expContTop,
+                    left: 0,
+                    behavior: 'smooth'
+                });
+            }
+        }
+        if (index === 1) {
+            window.scrollTo({
+                top: expContTop,
+                left: 0,
+                behavior: 'smooth'
+            });
+        }
+        if (index === 2) {
+            window.scrollTo({
+                top: leftTextTop,
+                left: 0,
+                behavior: 'smooth'
+            });
+        }
+        if (index === 3) {
+            window.scrollTo({
+                top: projectsTop,
                 left: 0,
                 behavior: 'smooth'
             });
