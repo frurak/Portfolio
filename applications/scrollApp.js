@@ -70,7 +70,7 @@ footerLinks.forEach((link,index) => {
                 });
             } else {
                 window.scrollTo({
-                    top: expContTop,
+                    top: bodyTop,
                     left: 0,
                     behavior: 'smooth'
                 });
