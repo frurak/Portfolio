@@ -86,7 +86,7 @@ body {
             list-style: none;
             .nav_link {
                 padding: 4px 0;
-                margin: 20px 0;
+                margin: 10px 0;
                 font-size: 18px;
                 font-weight: 300;
                 cursor: pointer;
@@ -121,6 +121,50 @@ body {
             line-height: 27px;
             font-weight: 300;
         }
+        // .button_style {
+        //     width: 100px;
+        //     height: 40px;
+        //     background: #000;
+        //     border-radius: 25px;
+        //     cursor: pointer;
+        //     @include flex(center, flex-start);
+        //     padding: 0 6px;
+        //     margin-top: 20px;
+        //     transition: 0.4s ease-in-out;
+        //     .button_inner_icon {
+        //         width: 30px;
+        //         height: 30px;
+        //         border-radius: 50%;
+        //         background: #fff;
+        //         position: relative;
+        //         // margin-left: 10px;
+        //         .icon-right-open {
+        //             color: #000;
+        //             position: absolute;
+        //             left: 50%;
+        //             top: 50%;
+        //             transform: translate(-50%,-50%);
+        //             transition: 0.4s ease-in-out;
+        //             font-size: 18px;
+        //         }
+        //     }
+        //     .button_text {
+        //         color: #fff;
+        //         margin-left: 15px;
+        //         font-size: 12px;
+        //         font-weight: 300;
+        //         transition: 0.4s ease-in-out;
+        //     }
+        //     &:hover .icon-right-open {
+        //         transform: translate(-50%,-50%) rotate(90deg);
+        //     }
+        //     &:hover {
+        //         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.35);
+        //     }
+        //     &:hover .button_text {
+        //         opacity: 0.85;
+        //     }
+        // }
     }
     .secondary_text_container {
         position: absolute;
@@ -568,26 +612,6 @@ body {
         height: 100%;
         width: 70%;
         z-index: 3;
-        .exit_projectsJs {
-            display: none;
-            position: absolute;
-            top: 0%;
-            right: 0%;
-            width: 100px;
-            height: 100px;
-            .exit_overlay {
-                position: relative;
-                width: 100%;
-                height: 100%;
-                .icon-right-open-big {
-                    font-size: 50px;
-                    position: absolute;
-                    left: 50%;
-                    top: 50%;
-                    transform: translate(-50%,-50%);
-                }
-            }
-        }
         .images_overlay {
             width: 100%;
             height: 100%;
@@ -598,16 +622,18 @@ body {
                 height: auto;
                 z-index: 2;
                 position: absolute;
-                left: 10%;
+                left: 50%;
                 top: 5%;
+                transform: translateX(-50%);
             }
             .image_shadow {
                 width: 120%;
                 height: auto;
                 z-index: 1;
                 position: absolute;
-                left: -7%;
+                left: 50%;
                 top: 3.3%;
+                transform: translateX(-50%);
             }
         }  
     }
@@ -746,25 +772,25 @@ body {
 }
 @keyframes moveUpDown {
     0% {
-        transform: translateY(0%);
+        transform: translateY(0%) translateX(-50%);
         opacity: 1;
     }
     25% {
         opacity: 0;
     }
     35% {
-        transform: translateY(-10%);
+        transform: translateY(-10%) translateX(-50%);
         opacity: 0;
     }
     50% {
-        transform: translateY(-8%);
+        transform: translateY(-8%) translateX(-50%);
         opacity: 0;
     }
     65% {
         opacity: 0;
     }
     100% {
-        transform: translateY(0%);
+        transform: translateY(0%) translateX(-50%);
         opacity: 1;
     }
 }
@@ -775,22 +801,22 @@ body {
 }
 @keyframes shadowMove {
     0% {
-        transform: translate(0%,0%);
+        transform: translateY(0%) translateX(-50%);
         opacity: 1;
     }
     35% {
-        transform: translate(-5%,8%);
+        transform: translateY(8%) translateX(-55%);
         opacity: 0;
     }
     50% {
-        transform: translate(-3%,5%);
+        transform: translateY(5%) translateX(-54%);
         opacity: 0;
     }
     65% {
         opacity: 0;
     }
     100% {
-        transform: translate(0%,0%);
+        transform: translateY(0%) translateX(-50%);
         opacity: 1;
     }
 }
@@ -1468,16 +1494,18 @@ footer {
                     height: auto;
                     z-index: 2;
                     position: absolute;
-                    left: -7.5%;
+                    left: 50%;
                     top: 15%;
+                    transform: translateX(-50%);
                 }
                 .image_shadow {
                     width: 115%;
                     height: auto;
                     z-index: 1;
                     position: absolute;
-                    left: -8%;
+                    left: 50%;
                     top: 20%;
+                    transform: translateX(-50%);
                 }
             }
             
@@ -1663,12 +1691,12 @@ footer {
             width: 100%;
             @include flex(center, flex-end);
             flex-direction: column;
-            padding: 0 5% 0 5%;
+            padding: 0 5% 8% 5%;
             // background: $green;
             .footer_right_content {
-                min-height: 80%;
+                height: 50%;
                 width: 100%;
-                @include flex(flex-start, space-between);
+                @include flex(flex-start, flex-end);
                 flex-direction: column;
                 // background: #fff;
                 .footer_links {
@@ -2214,16 +2242,18 @@ footer {
                     height: auto;
                     z-index: 2;
                     position: absolute;
-                    left: -7.5%;
+                    left: 50%;
                     top: 15%;
+                    transform: translateX(-50%);
                 }
                 .image_shadow {
                     width: 115%;
                     height: auto;
                     z-index: 1;
                     position: absolute;
-                    left: -8%;
+                    left: 50%;
                     top: 20%;
+                    transform: translateX(-50%);
                 }
             }
             
@@ -2411,12 +2441,12 @@ footer {
             width: 100%;
             @include flex(center, flex-end);
             flex-direction: column;
-            padding: 0 5% 0 5%;
+            padding: 0 5% 8% 5%;
             // background: $green;
             .footer_right_content {
-                min-height: 80%;
+                height: 50%;
                 width: 100%;
-                @include flex(flex-start, space-between);
+                @include flex(flex-start, flex-end);
                 flex-direction: column;
                 // background: #fff;
                 .footer_links {
@@ -2860,16 +2890,18 @@ footer {
                     height: auto;
                     z-index: 2;
                     position: absolute;
-                    left: -7.5%;
+                    left: 50%;
                     top: 15%;
+                    transform: translateX(-50%);
                 }
                 .image_shadow {
                     width: 90%;
                     height: auto;
                     z-index: 1;
                     position: absolute;
-                    left: -8%;
+                    left: 50%;
                     top: 20%;
+                    transform: translateX(-50%);
                 }
             }
             
@@ -3001,7 +3033,7 @@ footer {
             width: 100%;
             @include flex(center, flex-start);
             flex-direction: column;
-            padding: 8% 5% 0 5%;
+            padding: 5% 5% 0 5%;
             // background: #fff;
             .footer_left_content {
                 min-height: 80%;
@@ -3019,7 +3051,7 @@ footer {
                     }
                 }
                 h3 {
-                    width: auto;
+                    width: 60%;
                     font-size: 14px;
                     line-height: 21px;
                     font-weight: 300;
@@ -3029,19 +3061,19 @@ footer {
                     font-size: 14px;
                     line-height: 21px;
                     font-weight: 700;
-                    margin-top: 20px;
+                    margin-top: 15px;
                     color: $green;
                 }
                 .bottoms_socials {
                     @include flex(center, flex-start);
                     width: 50%;
-                    margin-top: 20px;
+                    margin-top: 15px;
                     .social_footer {
                         color: rgb(0, 0, 0);
                         font-size: 24px;
                         transition: 0.2s ease-in-out;
                         cursor: pointer;
-                        margin-right: 20px;
+                        margin-right: 15px;
                         padding: 0;
                         &:hover {
                             color: $green;
@@ -3055,12 +3087,12 @@ footer {
             width: 100%;
             @include flex(center, flex-end);
             flex-direction: column;
-            padding: 0 5% 0 5%;
+            padding: 0 5% 5% 5%;
             // background: $green;
             .footer_right_content {
-                min-height: 80%;
+                height: 50%;
                 width: 100%;
-                @include flex(flex-start, space-between);
+                @include flex(flex-start, flex-end);
                 flex-direction: column;
                 // background: #fff;
                 .footer_links {
@@ -3521,16 +3553,18 @@ footer {
                     height: auto;
                     z-index: 2;
                     position: absolute;
-                    left: 0%;
+                    left: 50%;
                     top: 15%;
+                    transform: translateX(-50%);
                 }
                 .image_shadow {
                     width: 100%;
                     height: auto;
                     z-index: 1;
                     position: absolute;
-                    left: -0%;
+                    left: 50%;
                     top: 20%;
+                    transform: translateX(-50%);
                 }
             }
             
@@ -3663,7 +3697,7 @@ footer {
             width: 100%;
             @include flex(center, flex-start);
             flex-direction: column;
-            padding: 8% 5% 0 5%;
+            padding: 5% 5% 0 5%;
             // background: #fff;
             .footer_left_content {
                 min-height: 80%;
@@ -3717,12 +3751,12 @@ footer {
             width: 100%;
             @include flex(center, flex-end);
             flex-direction: column;
-            padding: 0 5% 0 5%;
+            padding: 0 5% 5% 5%;
             // background: $green;
             .footer_right_content {
-                min-height: 80%;
+                height: 50%;
                 width: 100%;
-                @include flex(flex-start, space-between);
+                @include flex(flex-start, flex-end);
                 flex-direction: column;
                 // background: #fff;
                 .footer_links {
@@ -4166,16 +4200,18 @@ footer {
                     height: auto;
                     z-index: 2;
                     position: absolute;
-                    left: -7.5%;
+                    left: 50%;
                     top: 15%;
+                    transform: translateX(-50%);
                 }
                 .image_shadow {
                     width: 90%;
                     height: auto;
                     z-index: 1;
                     position: absolute;
-                    left: -8%;
+                    left: 50%;
                     top: 20%;
+                    transform: translateX(-50%);
                 }
             }
             
@@ -4307,7 +4343,7 @@ footer {
             width: 100%;
             @include flex(center, flex-start);
             flex-direction: column;
-            padding: 8% 5% 0 5%;
+            padding: 5% 5% 0 5%;
             // background: #fff;
             .footer_left_content {
                 min-height: 80%;
@@ -4325,7 +4361,7 @@ footer {
                     }
                 }
                 h3 {
-                    width: auto;
+                    width: 60%;
                     font-size: 14px;
                     line-height: 21px;
                     font-weight: 300;
@@ -4335,19 +4371,19 @@ footer {
                     font-size: 14px;
                     line-height: 21px;
                     font-weight: 700;
-                    margin-top: 30px;
+                    margin-top: 20px;
                     color: $green;
                 }
                 .bottoms_socials {
                     @include flex(center, flex-start);
                     width: 50%;
-                    margin-top: 20px;
+                    margin-top: 15px;
                     .social_footer {
                         color: rgb(0, 0, 0);
                         font-size: 24px;
                         transition: 0.2s ease-in-out;
                         cursor: pointer;
-                        margin-right: 20px;
+                        margin-right: 15px;
                         padding: 0;
                         &:hover {
                             color: $green;
@@ -4361,12 +4397,12 @@ footer {
             width: 100%;
             @include flex(center, flex-end);
             flex-direction: column;
-            padding: 0 5% 0 5%;
+            padding: 0 5% 5% 5%;
             // background: $green;
             .footer_right_content {
-                min-height: 80%;
+                height: 50%;
                 width: 100%;
-                @include flex(flex-start, space-between);
+                @include flex(flex-start, flex-end);
                 flex-direction: column;
                 // background: #fff;
                 .footer_links {
@@ -4811,16 +4847,18 @@ footer {
                     height: auto;
                     z-index: 2;
                     position: absolute;
-                    left: -7.5%;
+                    left: 50%;
                     top: 15%;
+                    transform: translateX(-50%);
                 }
                 .image_shadow {
                     width: 115%;
                     height: auto;
                     z-index: 1;
                     position: absolute;
-                    left: -8%;
+                    left: 50%;
                     top: 20%;
+                    transform: translateX(-50%);
                 }
             }
             
@@ -4953,7 +4991,7 @@ footer {
             width: 100%;
             @include flex(center, flex-start);
             flex-direction: column;
-            padding: 8% 5% 0 5%;
+            padding: 5% 5% 0 5%;
             // background: #fff;
             .footer_left_content {
                 min-height: 80%;
@@ -4987,7 +5025,7 @@ footer {
                 .bottoms_socials {
                     @include flex(center, flex-start);
                     width: 50%;
-                    margin-top: 20px;
+                    margin-top: 10px;
                     .social_footer {
                         color: rgb(0, 0, 0);
                         font-size: 24px;
@@ -5007,10 +5045,10 @@ footer {
             width: 100%;
             @include flex(center, flex-end);
             flex-direction: column;
-            padding: 0 5% 0 5%;
+            padding: 0 5% 5% 5%;
             // background: $green;
             .footer_right_content {
-                min-height: 80%;
+                height: 50%;
                 width: 100%;
                 @include flex(flex-start, space-between);
                 flex-direction: column;
@@ -5460,16 +5498,18 @@ footer {
                     height: auto;
                     z-index: 2;
                     position: absolute;
-                    left: -7.5%;
+                    left: 50%;
                     top: 15%;
+                    transform: translateX(-50%);
                 }
                 .image_shadow {
                     width: 115%;
                     height: auto;
                     z-index: 1;
                     position: absolute;
-                    left: -8%;
+                    left: 50%;
                     top: 20%;
+                    transform: translateX(-50%);
                 }
             }
             
@@ -5602,7 +5642,7 @@ footer {
             width: 100%;
             @include flex(center, flex-start);
             flex-direction: column;
-            padding: 8% 5% 0 5%;
+            padding: 5% 5% 0 5%;
             // background: #fff;
             .footer_left_content {
                 min-height: 80%;
@@ -5636,13 +5676,13 @@ footer {
                 .bottoms_socials {
                     @include flex(center, flex-start);
                     width: 50%;
-                    margin-top: 20px;
+                    margin-top: 10px;
                     .social_footer {
                         color: rgb(0, 0, 0);
-                        font-size: 24px;
+                        font-size: 20px;
                         transition: 0.2s ease-in-out;
                         cursor: pointer;
-                        margin-right: 20px;
+                        margin-right: 10px;
                         padding: 0;
                         &:hover {
                             color: $green;
@@ -5656,12 +5696,12 @@ footer {
             width: 100%;
             @include flex(center, flex-end);
             flex-direction: column;
-            padding: 0 5% 0 5%;
+            padding: 0 5% 5% 5%;
             // background: $green;
             .footer_right_content {
-                min-height: 80%;
+                height: 50%;
                 width: 100%;
-                @include flex(flex-start, space-between);
+                @include flex(flex-start, flex-end);
                 flex-direction: column;
                 // background: #fff;
                 .footer_links {
@@ -6108,16 +6148,18 @@ footer {
                     height: auto;
                     z-index: 2;
                     position: absolute;
-                    left: 0%;
+                    left: 50%;
                     top: 15%;
+                    transform: translateX(-50%);
                 }
                 .image_shadow {
                     width: 100%;
                     height: auto;
                     z-index: 1;
                     position: absolute;
-                    left: -3%;
+                    left: 50%;
                     top: 20%;
+                    transform: translateX(-50%);
                 }
             }
             
@@ -6250,7 +6292,7 @@ footer {
             width: 100%;
             @include flex(center, flex-start);
             flex-direction: column;
-            padding: 8% 5% 0 5%;
+            padding: 5% 5% 0 5%;
             // background: #fff;
             .footer_left_content {
                 min-height: 80%;
@@ -6284,10 +6326,10 @@ footer {
                 .bottoms_socials {
                     @include flex(center, flex-start);
                     width: 50%;
-                    margin-top: 20px;
+                    margin-top: 10px;
                     .social_footer {
                         color: rgb(0, 0, 0);
-                        font-size: 36px;
+                        font-size: 30px;
                         transition: 0.2s ease-in-out;
                         cursor: pointer;
                         margin-right: 20px;
@@ -6304,12 +6346,12 @@ footer {
             width: 100%;
             @include flex(center, flex-end);
             flex-direction: column;
-            padding: 0 5% 0 5%;
+            padding: 0 5% 5% 5%;
             // background: $green;
             .footer_right_content {
-                min-height: 80%;
+                height: 50%;
                 width: 100%;
-                @include flex(flex-start, space-between);
+                @include flex(flex-start, flex-end);
                 flex-direction: column;
                 // background: #fff;
                 .footer_links {
@@ -6754,16 +6796,18 @@ footer {
                     height: auto;
                     z-index: 2;
                     position: absolute;
-                    left: -7.5%;
+                    left: 50%;
                     top: 15%;
+                    transform: translateX(-50%);
                 }
                 .image_shadow {
                     width: 90%;
                     height: auto;
                     z-index: 1;
                     position: absolute;
-                    left: -8%;
+                    left: 50%;
                     top: 20%;
+                    transform: translateX(-50%);
                 }
             }
             
@@ -6913,7 +6957,7 @@ footer {
                     }
                 }
                 h3 {
-                    width: auto;
+                    width: 60%;
                     font-size: 14px;
                     line-height: 21px;
                     font-weight: 300;
@@ -6949,12 +6993,12 @@ footer {
             width: 100%;
             @include flex(center, flex-end);
             flex-direction: column;
-            padding: 0 5% 0 5%;
+            padding: 0 5% 5% 5%;
             // background: $green;
             .footer_right_content {
-                min-height: 80%;
+                height: 50%;
                 width: 100%;
-                @include flex(flex-start, space-between);
+                @include flex(flex-start, flex-end);
                 flex-direction: column;
                 // background: #fff;
                 .footer_links {
@@ -7435,16 +7479,18 @@ footer {
                     height: auto;
                     z-index: 2;
                     position: absolute;
-                    left: 0%;
+                    left: 50%;
                     top: 15%;
+                    transform: translateX(-50%);
                 }
                 .image_shadow {
                     width: 100%;
                     height: auto;
                     z-index: 1;
                     position: absolute;
-                    left: -3%;
+                    left: 50%;
                     top: 20%;
+                    transform: translateX(-50%);
                 }
             }
         }
@@ -7576,7 +7622,7 @@ footer {
             width: 100%;
             @include flex(center, flex-start);
             flex-direction: column;
-            padding: 8% 5% 0 5%;
+            padding: 5% 5% 0 5%;
             // background: #fff;
             .footer_left_content {
                 min-height: 80%;
@@ -7610,7 +7656,7 @@ footer {
                 .bottoms_socials {
                     @include flex(center, flex-start);
                     width: 50%;
-                    margin-top: 20px;
+                    margin-top: 10px;
                     .social_footer {
                         color: rgb(0, 0, 0);
                         font-size: 36px;
@@ -7630,12 +7676,12 @@ footer {
             width: 100%;
             @include flex(center, flex-end);
             flex-direction: column;
-            padding: 0 5% 0 5%;
+            padding: 0 5% 5% 5%;
             // background: $green;
             .footer_right_content {
-                min-height: 80%;
+                height: 50%;
                 width: 100%;
-                @include flex(flex-start, space-between);
+                @include flex(flex-start, flex-end);
                 flex-direction: column;
                 // background: #fff;
                 .footer_links {
@@ -8079,16 +8125,18 @@ footer {
                     height: auto;
                     z-index: 2;
                     position: absolute;
-                    left: -7.5%;
+                    left: 50%;
                     top: 15%;
+                    transform: translateX(-50%);
                 }
                 .image_shadow {
                     width: 90%;
                     height: auto;
                     z-index: 1;
                     position: absolute;
-                    left: -8%;
+                    left: 50%;
                     top: 20%;
+                    transform: translateX(-50%);
                 }
             }
             
@@ -8274,12 +8322,12 @@ footer {
             width: 100%;
             @include flex(center, flex-end);
             flex-direction: column;
-            padding: 0 5% 0 5%;
+            padding: 0 5% 5% 5%;
             // background: $green;
             .footer_right_content {
-                min-height: 80%;
+                height: 50%;
                 width: 100%;
-                @include flex(flex-start, space-between);
+                @include flex(flex-start, flex-end);
                 flex-direction: column;
                 // background: #fff;
                 .footer_links {
@@ -8718,16 +8766,18 @@ footer {
                     height: auto;
                     z-index: 2;
                     position: absolute;
-                    left: 10%;
+                    left: 50%;
                     top: 15%;
+                    transform: translateX(-50%);
                 }
                 .image_shadow {
                     width: 120%;
                     height: auto;
                     z-index: 1;
                     position: absolute;
-                    left: -7%;
+                    left: 50%;
                     top: 10%;
+                    transform: translateX(-50%);
                 }
             }
         }
@@ -9388,16 +9438,18 @@ footer {
                     height: auto;
                     z-index: 2;
                     position: absolute;
-                    left: 10%;
+                    left: 50%;
                     top: 15%;
+                    transform: translateX(-50%);
                 }
                 .image_shadow {
                     width: 120%;
                     height: auto;
                     z-index: 1;
                     position: absolute;
-                    left: -7%;
+                    left: 50%;
                     top: 10%;
+                    transform: translateX(-50%);
                 }
             }
         }

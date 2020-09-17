@@ -10,22 +10,21 @@ const experienceData = [
         'Position & responsibilities of <span class="details_emphasis">Ecommerce Manager</span>.',
         '<span class="details_emphasis">Sales strategies</span> introducing and applying with emphasis on Marketing Performance traffic sources, including <span class="details_emphasis">Google AdWords, Business Facebook Ads, affiliate marketing, dynamic retargeting display ads, organic social media</span> and <span class="details_emphasis">dropshipping platforms</span>.',
         'Drawing up annual <span class="details_emphasis">ecommerce and marketing budget</span> with an indication of single months and possible adjustments.',
-        'Weekly, monthly, quarterly, annualy <span class="details_emphasis">reports</span> including business areas such as sales, operational, financial results, effectiveness and competition <span class="details_emphasis">analysis</span>, etc.',
-        'Ecommerce and marketing product exposure and <span class="details_emphasis">applying pre-planned marketing campaigns</span>.',
-        'Odpowiedzialność za ekspozycję produktu na stronie www oraz wdrażanie zaplanowanych kampanii marketingowych.'
+        'Weekly, monthly, quarterly, annually <span class="details_emphasis">reports</span> including business areas such as sales, operational, financial results, effectiveness and competition <span class="details_emphasis">analysis</span>, etc.',
+        'Ecommerce and marketing product exposure and <span class="details_emphasis">applying pre-planned marketing campaigns</span>.'
     ],
     [
         'Position & responsibilities of <span class="details_emphasis">Social Media Manager</span>.',
-        'Planning, launching and <span class="details_emphasis">optimalization of Business Facebook Ads Campaigns</span>.',
+        'Planning, launching and <span class="details_emphasis">optimalization of Business Facebook Ad Campaigns</span>.',
         'Drawing up and <span class="details_emphasis">marketing plans execution</span>.',
         'Targeting online and brick & mortar clients via <span class="details_emphasis">Email & SMS Marketing</span>.',
-        '<span class="details_emphasis">Copywriting</span> of affiliate, trade and partnership agreements, events and campaigns regulations and policies.'
+        '<span class="details_emphasis">Copywriting</span> of affiliate, trade and partnership agreement, event and campaign regulations and policies.'
     ],
     [
-        '<span class="details_emphasis">Tasks planing</span>, team work organization, execution.',
+        '<span class="details_emphasis">Task planning</span>, team work organization, execution.',
         '<span class="details_emphasis">Organization and supervising</span> of sport and workshop events.',
         'Responsibility for <span class="details_emphasis">maintaining external relations</span> with agencies, partners and other co-working companies.',
-        'Ecommerce costs and <span class="details_emphasis">deals negotiations</span>.',
+        'Ecommerce costs and <span class="details_emphasis">deal negotiations</span>.',
         ''
     ]
 ];

@@ -63,7 +63,7 @@ navDots.forEach((dot,index) => {
             setTimeout(() => {
                 projectImage.setAttribute('src', `assets/${projects.src[index]}`);
                 projectImage.setAttribute('alt', `${projects.alt[index]}`);
-            },800);
+            },700);
             //Remove image animation
             setTimeout(() => {
                 projectImage.classList.remove('project_image-active');
